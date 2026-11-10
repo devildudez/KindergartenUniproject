@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Children Registry | Sprout House </title>
+    <link rel="stylesheet" href="children.css">
+</head>
+<body>
+<h1>Add child</h1>
+
+<form method="post">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" name="fullName" required>
+
+    <label for="birth-date">Birth date</label>
+    <input type="date" id="birth-date" name="birthDate" required>
+    <label for="group">Group</label>
+    <select id="group" name="group" required>
+        <option value="">Select a group</option>
+        <option value="acorns">Acorns</option>
+        <option value="sunflowers">Sunflowers</option>
+    </select>
+    <button type="submit">Save child</button>
+</form>
+</body>

@@ -3,15 +3,83 @@
 <head>
 <meta charset="UTF-8">
     <title> Children Registry | Sprout House </title>
-    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="children.css">
 </head>
 <body>
 <div class="asidebar">
     Sprout House 🌱
+    <nav class="bar">
+        <ul>
+            <li><a href="children.html" aria-current="page">Children</a></li>
+            <li>Statistics</li>
+            <li>Accounts &amp; Roles</li>
+            <li>About the Author</li>
+        </ul>
+    </nav>
 </div>
 
 <div class="registry">
-    <h1>Children Registry</h1>
+    <div class="registry-header">
+        <h1>Children Registry</h1>
+        <button type="button">+ Add child </button>
+    </div>
+    <div class="registry-controls">
+        <label for="search-children">Search children</label>
+        <input type="search" id="search-children" placeholder="Search by child or guardian name">
+
+        <label for="group-children">Group</label>
+        <select id="group-children">
+            <option value="">All groups</option>
+            <option value="acorns">Acorns</option>
+            <option value="sunflowers">Sunflowers</option>
+        </select>
+
+        <label for="sort-children">Sort by</label>
+        <select id="sort-children">
+            <option value="name">Name (A–Z)</option>
+            <option value="oldest">Birth date (oldest first)</option>
+            <option value="youngest">Birth date (youngest first)</option>
+        </select>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Child</th>
+                <th scope="col">Birth date</th>
+                <th scope="col">Group</th>
+                <th scope="col">Guardian</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Amelia Green</td>
+                <td>12.03.2021</td>
+                <td>Acrons</td>
+                <td>Laura green</td>
+                <td>enrolled</td>
+                <td>view</td>
+            </tr>
+            <tr>
+                <td>Noah Miller</td>
+                <td>25 July 2021</td>
+                <td>Acorns</td>
+                <td>Sophie Miller</td>
+                <td>Enrolled</td>
+                <td><button type="button">View</button></td>
+            </tr>
+            <tr>
+                <td>Olivia Lee</td>
+                <td>9 January 2022</td>
+                <td>Sunflowers</td>
+                <td>Emma Lee</td>
+                <td>Waitlisted</td>
+                <td><button type="button">View</button></td>
+            </tr>
+
+        </table>
+        <button type="button">View</button>
+    </div>
+
 </div>
 </body>
 </html>
